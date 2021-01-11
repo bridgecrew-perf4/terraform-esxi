@@ -5,3 +5,5 @@
 ## OVA images
 ### Ubuntu
 * https://cloud-images.ubuntu.com/
+## Cloud-init
+* https://cloudinit.readthedocs.io/en/0.7.7/topics/examples.html
