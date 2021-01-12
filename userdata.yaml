@@ -1,10 +1,9 @@
 users:
   - name: lheia
-    gecos: lheia
+    primary_group: lheia
     sudo: ALL=(ALL) NOPASSWD:ALL
     groups: sudo
+    lock_passwd: false
+    passwd: $6$rounds=4096$eru0iU.ATDV6$HSL6t2lIsoWajPMuMIi8MYJFRVf7TZF073gjapC5vPs2e4DPfOph2HC2F19qCAmwB3aDEhLiqdzTzNfhdcrbw0
     ssh-authorized-keys:
       - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDJa28VuIjJF74nsbxy5KsqxulbONGjdi4IwWrW8Rd/+BewVWSg8QD70ChaeS/IoAUzYqQ5GhcjRmiHeXVad2muTJOznQnEkR0qq4PRtSEgLUkwH1OAQWJ8CKWXVFX1ulnN+DawdLXbd5QMdDhzGAxD9TTNCDcgtZrdbySXRt+OvWijw5GAXR5wktqeopZ2IeOfUKDUlqBMWenNPx1cTQI28cEDGiRMTlHy6w9WAw/5YM0PG0r1xFxjGhye8vTBnnis5ANdtJADBg2ilOJ0miKIPqa8aOICfk6sj62aFUCrqVpZN2GqtB6+o+quEz2WhlFrVgc+fS+g+yqem0a3xDSH lheia@DESKTOP-BEKKPGR
-
-runcmd:
-  - hostnamectl set-hostname ${HOSTNAME}
